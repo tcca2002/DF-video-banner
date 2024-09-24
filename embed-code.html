@@ -1,0 +1,91 @@
+<section class="row-index-1"><div class="row-container full-width clearfix"><div class="row-content-container fixed-width clearfix">
+	
+	
+	<style>
+
+.embed-wd-video {
+
+	}
+	</style>
+	
+	
+	
+
+<div class="embed-wd-video">
+	
+		<button class="wd-video-control play">
+		<span class="wd-video-control-text visuallyhidden">
+		<span class="play-state">Play</span> video</span>
+	</button>
+	<button class="wd-sound-control muted">
+		<span class="wd-sound-control-text visuallyhidden">
+		<span class="sound-state">Play</span> sound</span>
+	</button>
+	
+	<video class="wd-video" autoplay="" loop="" muted="" playsinline="">
+		<source src="/files/assets/discoverfld/v/1/videos/cabramatta-lunar-new-year-celebration-2023.mp4" type="video/mp4">
+	</video>
+</div>
+	
+	</section>
+
+/*New CSS for full width video*/
+<style>
+@media screen and (min-width:992px) {
+	.row-container .row-content-container {
+		padding: 0;
+	}
+}
+
+@media screen and (min-width:768px) {
+	.row-container .row-content-container {
+		padding: 0;
+	}
+}
+	
+#main-content > section.row-index-1 > div > div > section > div > div > div > video{
+		width:100%;
+	}
+
+	.fixed-width{
+		max-width: none;
+	}
+	
+	.row-container .row-content-container {
+		padding: 0;
+	}
+
+#main-content > section.row-index-1 > div > div > div > button.wd-video-control.pause {
+
+-webkit-text-size-adjust: 100%;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-transform: none;
+    -webkit-appearance: button;
+    cursor: pointer;
+    color: #222;
+    font-family: "Josefin Sans",sans-serif;
+    text-align: center;
+    text-decoration: none;
+    line-height: initial;
+    margin: 0 20px 15px 0;
+    border: none;
+    transition: none;
+    position: absolute;
+    display: block;
+    background: none;
+    border-radius: 50%;
+    padding: 0;
+    z-index: 1;
+    background-image: url(/files/assets/tourism/homepage-video/control-icons/video-controls.png);
+    background-size: 374px 46px;
+    background-repeat: no-repeat;
+    width: 46px;
+    height: 46px;
+    top: 20px;
+    left: 20px;
+    background-position: -56px 0px;
+}
+</style>

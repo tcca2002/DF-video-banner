@@ -1,0 +1,1894 @@
+@import "_oc_wizard_var.scss";
+@import "_oc_wizard_mixins.scss";
+@import "client_variables.scss";
+
+/*Default Styles (Size 3/Mobile) Start*/
+// TEMPLATE
+.background-container {
+	background-size: auto;
+}
+
+.image-fade {
+	display: none;
+}
+// TEMPLATE END
+
+// TYPOGRAPHY
+// TYPOGRAPHY END
+
+// TABLES
+table {
+	&.sc-responsive-table,
+	&.sc-responsive-table-heading {
+		thead tr th,
+		tfoot tr th,
+		tbody tr td,
+		tr td,
+		tfoot tr td {
+			line-height: $typography-body-baselineheight * 1em;
+		}
+	}
+
+	&.sc-responsive-table {
+		margin-bottom: 10px;
+	}
+}
+// TABLES END
+
+// HEADER
+.header-outer-container {
+	position: relative;
+	
+	&:before {
+		content: '';
+		width: 100%;
+		height: 31em;
+		position: absolute;
+		top: 0;
+		left: 0;
+		/*
+		background: linear-gradient(0deg, rgba(14,17,39,0) 0%, rgba(14,17,39,.9) 85%, rgba(14,17,39,1) 100%); */
+		background: #000000;
+		
+	}
+}
+
+.content-type-oc-profile {
+	.sc-search-text,
+	input.sc-search-button[type="submit"] {
+		border: transparent;
+	}
+}
+
+.sc-search-text {
+	font-size: .889em;
+	border: 1px solid $white;
+}
+
+input.sc-search-button[type="submit"] {
+	font-weight: bold;
+	border: 1px solid $white;
+	
+	&:hover, &:focus {
+		text-decoration: underline;
+	}
+}
+
+#predictiveResults {
+	.predictive-search-link-item h2 {
+		font-weight: $header-predictivesearch-searchmorelinkfontweight;
+	}
+
+	.predictive-search-link-item {
+		&:hover, &:focus, &.itemSelected {
+			h2 {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	a.search-view-more {
+		&:hover, &:focus, &.itemSelected {
+			text-decoration: underline;
+		}
+	}
+	// Within the Style tab (Header side tab), set 'Search more link margin' to 0px 0px 0px 0px, and padding to desired values.
+
+	> p {
+		padding: $header-predictivesearch-listitempadding;
+	}
+}
+// HEADER END
+
+// UTILITY BAR
+.toolbar-button-language,
+.toolbar-button-quicklinks{
+	height: 36px;
+	
+	&:hover, &:focus {
+		text-decoration: underline;
+	}
+}
+
+.toolbar-item {
+	margin-bottom: 0px;
+	
+	.toolbar-drop-down a {
+        &:hover, &:focus {
+            span {
+                color: $utilitybar-dropdowns-fontcolorhover;
+            }
+        }
+    }
+}
+
+.toolbar-language .no-js-element {
+    a, .current-language {
+        color: $utilitybar-font-fontcolor;
+    }
+}
+// UTILITY BAR END
+
+// FOOTER
+.Acknowledgement-footer p {
+	border-bottom: 1px solid $white;
+	padding-bottom: 40px;
+	margin-bottom: 0;
+}
+
+.footer-first-row,
+.footer-second-row {
+	.grid-pad {
+		padding: 0;
+	}
+}
+
+.footer-first-row .grid > div {
+	margin-bottom: 40px;
+}
+
+.footer-secondary-links a {
+	font-size: 1em;
+}
+
+ul.footer-links {
+	margin: 0;
+
+	a {
+		margin-bottom: 15px;
+	}
+
+	&.social-media-links li {
+		min-height: 0px;
+	}
+}
+
+.footer-links.social-media-links {
+	padding-left: 10px;
+}
+
+ul.social-media-links li a i {
+	width: 32px;
+    height: 27px;
+    margin-left: -40px;
+}
+
+ul.social-media-links li a i,
+.social-media-profiles li a:before {
+	background-position: -387px -572px;
+}
+
+.social-media-links .footer-link-google-plus i,
+.social-media-links .footer-link-googleplus i,
+.social-media-profiles li.google-plus a:before,
+.social-media-profiles li.googleplus a:before {
+	background-position: -36px -571px;
+}
+
+.social-media-links .footer-link-email i {
+	background-position: -218px -375px;
+}
+
+.social-media-links .footer-link-instagram i {
+	background-position: -182px -375px;
+}
+
+.social-media-links .footer-link-telephone i {
+	background-position: -146px -375px;
+}
+
+.social-media-links .footer-link-facebook i {
+	background-position: 0px -375px;
+}
+
+.social-media-profiles li.facebook a:before {
+	background-position: -66px -568px;
+}
+
+.social-media-links .footer-link-twitter i {
+	background-position: -37px -375px;
+}
+
+.social-media-profiles li.twitter a:before {
+	background-position: -100px -571px;
+}
+
+.social-media-links .footer-link-youtube i {
+	background-position: -73px -375px;
+}
+
+.social-media-profiles li.youtube a:before {
+	background-position: -133px -571px;
+}
+
+// .social-media-links .footer-link-instagram i,
+.social-media-profiles li.instagram a:before {
+	background-position: -165px -572px;
+}
+
+.social-media-links .footer-link-pinterest i,
+.social-media-profiles li.pinterest a:before {
+	background-position: -197px -571px;
+}
+
+.social-media-links .footer-link-linkedin i,
+.social-media-profiles li.linkedin a:before {
+	background-position: -228px -572px;
+}
+
+.social-media-links .footer-link-vimeo i,
+.social-media-profiles li.vimeo a:before {
+	background-position: -260px -571px;
+}
+
+.social-media-links .footer-link-wordpress i,
+.social-media-profiles li.wordpress a:before {
+	background-position: -324px -571px;
+}
+
+.social-media-links .footer-link-tumblr i,
+.social-media-profiles li.tumblr a:before {
+	background-position: -356px -571px;
+}
+
+.social-media-links .footer-link-rss i {
+	background-position: -110px -375px;
+}
+
+.powered-by {
+	margin-top: 20px;
+}
+// FOOTER END
+
+// BREADCRUMBS
+// Set padding based on size 3 general content padding and default .main-container padding (from oc_main.scss)
+#breadcrumbs-container {
+	padding-right: nth($template-general-contentpaddings3,2) + 15px;
+	padding-left: nth($template-general-contentpaddings3,4) + 15px;
+	
+	.current-page {
+		font-weight: bold;
+	}
+}
+// END
+// BREADCRUMBS END
+
+// HOMEPAGE
+	.row-container .row-container-title h1 {
+		font-size: 1.444em;
+	}
+	
+	.row-index-1 .row-container {
+		background: linear-gradient(-180deg, rgba(250,0,0,0) 99px, rgba(247,247,247,1) 99px);
+	}
+	
+	.row-index-2 {
+		.row-content-container {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	
+	section[class^="row-index-"] .row-container-title h1:after {
+		background-color: $pink;
+	    content: "";
+	    display: inline-block;
+	    height: 4px;
+	    position: relative;
+	    vertical-align: middle;
+	    width: 119px;
+	    margin: 0 auto;
+	    left: 0.5em;
+	}
+// HOMEPAGE END
+
+// HOMEPAGE LISTINGS
+.profile-events-listing-container {
+	.grid>div a {
+		border: 1px solid $grey;
+	}
+}
+
+.profile-tabbed-listing {
+	padding: 0;
+}
+
+.tabs-panel .profile-listing-container>.profile-events-listing.more-than-3-items .col-m-6:nth-child(2n+1) {
+	clear: right;
+}
+
+.profile-listing-container {
+	a.profile-list {
+		&:hover, &:focus {
+			h2 {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.canceled-tag {
+		margin-bottom: 5px;
+	}
+
+	// Style the View more button, as required
+	.panel-button,
+	.panel-button:visited {
+		font-weight: bold;
+		
+		&:hover, &:focus {
+			text-decoration: underline;
+		}
+	}
+}
+
+.profile-events-listing .profile-list .list-item-block-date {
+	float: none;
+	display: block;
+	margin-bottom: nth($homepagelistings-events-datemargin,3);
+	border-radius: 50%;
+	width: $listings-event-datewidth * 1px; 
+    height: $listings-event-datewidth * 1px; 
+    line-height: 1.3;
+}
+// HOMEPAGE LISTINGS END
+
+// ANNOUNCEMENT
+.oc-emergency-announcement-container .side-box .side-box-content > a {
+	display: block;
+}
+
+.emergency-message-box {
+	.emergency-announcement-item-dismiss {
+		text-decoration: none;
+		
+		&:after {
+			background: none;
+			top: 6px;
+	    	right: 9px;
+			width: 32px;
+			height: 32px;
+			content: '\ea32'; // Remove
+			font: normal normal normal 32px/1 'FontIcons';
+			color: #FFFFFF;
+			text-indent: 0;
+		}
+	}
+	
+	&.oc-emergency-severity-10 {
+		.emergency-announcement-item-dismiss,
+		.emergency-announcement-item-dismiss:after,
+		.accordion-closed > h2 {
+			color: $announcement-highseverity-titlefontcolor;
+		}
+		
+		.announcement-dismiss-button {
+			border: 2px solid transparent;
+			
+			&:hover, &:focus {
+				border-color: $announcement-highseverity-dismissbuttonhovertextcolor
+			}
+		}
+	}
+	
+	&.oc-emergency-severity-20 {
+		.emergency-announcement-item-dismiss,
+		.emergency-announcement-item-dismiss:after,
+		.accordion-closed > h2 {
+			color: $announcement-mediumseverity-titlefontcolor;
+		}
+		
+		.announcement-dismiss-button {
+			border: 2px solid transparent;
+			
+			&:hover, &:focus {
+				border-color: $announcement-mediumseverity-dismissbuttonhovertextcolor
+			}
+		}
+	}
+	
+	&.oc-emergency-severity-30 {
+		.emergency-announcement-item-dismiss,
+		.emergency-announcement-item-dismiss:after,
+		.accordion-closed > h2 {
+			color: $announcement-lowseverity-titlefontcolor;
+		}
+		
+		.announcement-dismiss-button {
+			border: 2px solid transparent;
+			
+			&:hover, &:focus {
+				border-color: $announcement-lowseverity-dismissbuttonhovertextcolor
+			}
+		}
+	}
+}
+
+.oc-emergency-dismissed {	
+	.accordion-trigger i {
+		background-image: none;
+		margin: 22px 20px;
+		
+		&:before, &:after {
+			@include oc-background-color($announcement-general-dismissedheaderfontcolor, $announcement-general-dismissedheaderfontcolor-alpha);
+		}
+	}
+	
+	&.max-severity-10 .accordion-closed {
+		.accordion-trigger {
+			color: $announcement-highseverity-titlefontcolor;
+
+			i {
+				&:before, &:after {
+					background-color: $announcement-highseverity-titlefontcolor;
+				}
+			}
+		}
+		
+		> h2 {
+			color: $announcement-highseverity-titlefontcolor;
+		}
+	}
+	
+	&.max-severity-20 .accordion-closed {
+		.accordion-trigger {
+			color: $announcement-mediumseverity-titlefontcolor;
+
+			i {
+				&:before, &:after {
+					background-color: $announcement-mediumseverity-titlefontcolor;
+				}
+			}
+		}
+		
+		> h2 {
+			color: $announcement-mediumseverity-titlefontcolor;
+		}
+	}
+	
+	&.max-severity-30 .accordion-closed {
+		.accordion-trigger {
+			color: $announcement-lowseverity-titlefontcolor;
+
+			i {
+				&:before, &:after {
+					background-color: $announcement-lowseverity-titlefontcolor;
+				}
+			}
+		}
+		
+		> h2 {
+			color: $announcement-lowseverity-titlefontcolor;
+		}
+	}
+}
+// END
+// ANNOUNCEMENT END
+
+// WELCOME MESSAGE
+a.profile-featured-text {
+	&:hover, &:focus {
+		color: $welcomemessage-font-fontcolor;
+	}
+}
+// WELCOME MESSAGE END
+
+// ROTATING BANNER
+.slideshow-widget .ocflex-pauseplay a.ocflex-play:after {
+	left: 9px;
+}
+
+.slideshow-widget article .slide-text {
+	h2 {
+		font-size: 1.222em;
+	}
+	
+	p {
+		font-size: .889em;
+	}
+}
+
+.ocflex-control-paging li a {
+	&:after {
+		border-radius: $rotatingbanner-dotnavigation-borderradius * 1px;
+	}
+	
+	&:focus:after {
+		@include oc-background-color($rotatingbanner-dotnavigation-activecolor, $rotatingbanner-dotnavigation-activecolor-alpha);
+	}
+}
+// ROTATING BANNER END
+
+// TABS
+.content-type-oc-profile { // underline icons when hovered / focused
+	a.tab-header-title {
+		position: relative;
+		
+		&:before {
+			content: '';
+			position: absolute;
+			bottom: 16px;
+			left: 28.4px;
+			height: 0px;
+			width: 27px;
+			background-color: $tabs-tabheader-fontcolorhover;
+			transition: height .32s ease-out;
+		}
+		
+		&.selected {
+			&:before {
+				background-color: $tabs-activetabheader-fontcolor;
+			}
+		}
+		
+		&:hover, &:focus {
+			&:before {
+				height: 5px;
+			}
+		}
+	}
+}
+
+.content-type-oc-profile {
+	.tabs-panel .wysiwyg-content {
+	    padding: 20px 0px 0;
+	}
+	
+	.profile-featured-links {
+		margin-bottom: 0;
+	}
+
+	a.tab-header-title {
+		&.selected {
+			height: 95px;
+	    	top: -16px;
+	    	padding-top: 35px;
+		}
+		
+		&,
+		&.selected,
+		&:first-child,
+		&:last-child {
+			border-radius: 20px 20px 0px 0px;
+			text-align: center;
+		}
+		
+		&,
+		&:visited {
+			margin-right: 0;
+		}
+	}
+}
+a.tab-header-title {	
+	font-weight: bold;
+	
+	.item-icon {
+		width: 34px;
+		background-image: none;
+		
+		&:before {
+			display: block;
+			content: '\ea2d'; // Pages
+			font: normal normal normal 26px/1 'FontIcons';
+			color: $tabs-tabheader-fontcolor;
+			text-align: center;
+		}
+	}
+	
+	&:hover, &:focus {
+		.item-icon:before {
+			color: $tabs-tabheader-fontcolorhover;
+		}
+	}
+	
+	&.selected {		
+		.item-icon:before {
+			color: $tabs-activetabheader-fontcolor;
+		}
+	}
+
+	&.tab-type-homepage-do-it-online .item-icon:before {
+		content: '\ea2c'; // Laptop
+	}
+
+	&.tab-type-homepage-news-listing .item-icon:before {
+		content: '\ea2a'; // News
+	}
+
+	&.tab-type-homepage-events-listing .item-icon:before {
+		content: '\ea2f'; // Calendar
+	}
+
+	&.tab-type-homepage-consultation-listing .item-icon:before {
+		content: '\ea2b'; // Conversation
+	}
+
+	&.tab-type-homepage-public-notices-listing .item-icon:before {
+		content: '\ea2e'; // Megaphone
+	}
+	
+	&.tab-type-getting-here .item-icon:before {
+		content: '\ea37'; // Map
+	}
+	
+	&.tab-type-heritage .item-icon:before {
+		content: '\ea38'; // School
+	}
+}
+
+// Services tabbed container
+.tab-group-inner-page {
+	.tabs-panel {
+		@include oc-background-color($tabs-tabbody-backgroundcolor, $tabs-tabbody-backgroundcolor-alpha);
+	}
+
+	a.tab-header-title,
+	a.tab-header-title:visited {
+		min-height: 0;
+		padding: 15px 30px;
+		padding: $tabs-tabheader-padding;
+		color: $tabs-tabheader-fontcolor;
+		@include oc-background-color($tabs-tabheader-backgroundcolor, $tabs-tabheader-backgroundcolor-alpha);
+		font-weight: bold;
+
+		&:hover, &:focus {
+			color: $tabs-tabheader-fontcolorhover;
+			@include oc-background-color($tabs-tabheader-backgroundcolorhover, $tabs-tabheader-backgroundcolorhover-alpha);
+			text-decoration: underline;
+		}
+	}
+
+	a.tab-header-title.selected,
+	a.tab-header-title.selected:visited {
+		padding: $tabs-tabheader-padding;
+		color: $tabs-activetabheader-fontcolor;
+		@include oc-background-color($tabs-activetabheader-backgroundcolor, $tabs-activetabheader-backgroundcolor-alpha);
+		font-weight: bold;
+
+		&:hover, &:focus {
+			color: $tabs-activetabheader-fontcolor;
+			@include oc-background-color($tabs-activetabheader-backgroundcolor, $tabs-activetabheader-backgroundcolor-alpha);
+			text-decoration: underline;
+		}
+	}
+
+	.tab-stacked {
+		a.tab-header-title,
+		a.tab-header-title:visited,
+		a.tab-header-title.selected,
+		a.tab-header-title.selected:visited {
+			padding: 15px 30px;
+		}
+
+		a.tab-header-title,
+		a.tab-header-title:visited {
+	    	margin-right: 0;
+		}
+
+		a.tab-header-title.selected,
+		a.tab-header-title.selected:visited {
+			top: 0;
+		}
+	}
+}
+
+.step-numbering-Yes .step-section-container {
+    padding-left: 50px;
+    margin-left: 34px;
+    border-left: dashed $blue 2px;  // Colour determined by design
+    min-height: 80px;
+
+	&:last-child {
+    	margin-left: 36px; // Add border width value
+	}
+
+	&:before {
+		color: $white;  // Value determined by design
+		background-color: $blue;  // Value determined by design
+		border-width: 2px;
+		border-color: $blue;
+		font-size: 1.778em; /* Issue with using ems for pseudo elements in IE, so px value used instead */
+		font-size: 32px;
+		font-weight: bold;
+		width: 60px;
+		height: 60px;
+		left: -31px;
+		line-height: 1.8;
+	}
+}
+// TABS END
+
+// DO IT ONLINE
+.top-task-homepage .profile-list {	
+	&:after {
+		background: none;
+		content: '\ea1c'; // Right Arrow
+		font: normal normal normal 14px/1 'FontIcons';
+		color: $doitonline-title-fontcolor;
+	}
+	
+	&:hover:after, &:focus:after {
+		color: $doitonline-title-fontcolorhover;
+	}
+}
+// DO IT ONLINE END
+
+// FEATURED CONTENT
+.tabs-panel .profile-featured-panel {
+	h2 {
+		text-align: center;
+		color: $featuredcontent-title-fontcolor;
+		@include oc-background-color($featuredcontent-title-backgroundcolor, $featuredcontent-title-backgroundcolor-alpha);
+		font-size: 1.333em;
+		padding: $featuredcontent-title-padding;
+		margin: 0;
+	}
+	
+	.large-thumbnail-image {
+		display: block;
+	}
+}
+
+.profile-featured-panel {
+	&:hover, &:focus {
+		> h2 {
+			text-decoration: underline;
+		}
+	}
+}
+// FEATURED CONTENT END
+
+// HOMEPAGE SEARCH
+// HOMEPAGE SEARCH END
+
+// HOMEPAGE ADDRESS PICKER
+// HOMEPAGE ADDRESS PICKER END
+
+// BACK TO TOP
+// [Recommended] Ensures visual is never just the icon
+#back-to-top {
+	border: solid 2px $backtotop-general-backgroundcolorhover;
+	transition-property: background-color, color;
+
+	i {
+		background: none;
+		transition: none;
+
+		html.js & {
+			margin: 11px;
+		}
+		
+		&:before {
+			content: '\ea1b'; // Up Arrow
+			font: normal normal normal 16px/1 'FontIcons';
+			color: $backtotop-general-backgroundcolorhover;
+		}
+	}
+	
+	&:hover, &:focus {
+		border-color: $backtotop-general-backgroundcolor;
+		border-color: $backtotop-general-backgroundcolor-alpha;
+		
+		i {			
+			&:before {
+				color: $backtotop-general-backgroundcolor;
+			}
+		}
+	}
+}
+// END
+// BACK TO TOP END
+
+// LANDING PAGE
+// Override theme settings (landing pages use listing container theme settings, which aren't always desired)
+.landing-page-nav .list-item-container,
+.landing-page-nav .list-item-container.small-panel,
+.landing-page-list-container .list-item-container,
+.landing-page-list-container .list-item-container.small-panel,
+.landing-page-nav.landing-2-col .list-item-container {
+	a {
+		margin: 0 0 20px;
+	}
+}
+// END
+
+// .landing-page-list-container .list-item-container.small-panel a {
+// 	&:hover, &:focus {
+// 		.list-item-title {
+// 			text-decoration: underline;
+// 		}
+// 	}
+// }
+
+.quick-links-section {
+	a {
+		&:before {
+			background: none;
+			content: '\ea1c'; // Right Arrow
+			font: normal normal normal 18px/1 'FontIcons';
+			color: $landingpage-quicklinks-itemfontcolor;
+		}
+	
+		&:hover, &:focus {
+			&:before {
+				color: $landingpage-quicklinks-itemfontcolorhover;
+			}
+		}
+	}
+	
+	.accordion-trigger i {
+		&:before, &:after {
+			background-color: $landingpage-quicklinks-titlefontcolor;
+		}
+	}
+}
+
+.quick-links-header {
+	color: $landingpage-quicklinks-titlefontcolor;
+
+	&:hover h2 {
+		text-decoration: underline;
+	}
+}
+// LANDING PAGE END
+
+// SECTION NAVIGATION
+// SECTION NAVIGATION END
+
+// LISTINGS
+.search-filter:not(.my-meighbourhood-filter) .search-filter-body label:first-child {
+	margin-top: 0;
+}
+
+.sc-search-box {
+	position: relative;
+	display: inline-block;
+
+	input {
+		background-image: none;
+	}
+
+	&:before {
+		content: '';
+		position: absolute;
+		width: 19px;
+		height: 20px;
+		top: calc(50% - 10px); // 10px = half icon height
+		left: nth($listings-filter-inputpadding,2);
+		@include general-sprite;
+		background-position: 0px -258px;
+		z-index: 1;
+	}
+}
+
+.search-filter {
+	.accordion-trigger i {
+		&:before, &:after {
+			background-color: $listings-filter-titlefontcolor;
+		}
+	}
+
+	// Multi select wrapper filter
+	.multi-select-options {
+		margin-bottom: 20px;
+		
+		button.btn-tag {	
+			margin: 0 5px 5px 0;
+			    
+			&:hover, &:focus {
+				// Style according to theme
+			}
+		}
+	}
+}
+
+.search-filter-header {
+	color: $listings-filter-titlefontcolor;
+
+	&:hover, &:focus {
+		text-decoration: underline;
+	}
+}
+
+.list-container {
+	&.list-container-grid .small-panel a {
+		padding: $listings-listitem-itempadding;
+
+		.list-item-title {
+			margin: $listings-listitem-titlemargin;
+		}
+
+		p {
+			margin: $listings-listitem-descriptionmargin;
+
+			&.list-item-address {
+				margin-top: 10px;
+			}
+
+			&.small-text {
+				margin: $listings-listitem-subtextmargin;
+			}
+
+			&.tagged-as-list {
+				margin: $listings-listitem-taggedasmargin;
+			}
+		}
+	}
+
+	.list-item-container-2 .published-on,
+	.list-item-container .published-on,
+	.list-item-container .applications-closing {
+		&:before {
+			background: none;
+			content: '\ea29'; // Calendar 2
+			font: normal normal normal 19px/1 'FontIcons';
+			color: $listings-listitem-titlefontcolor; // Colour determined by design
+			transition: color 0.3s ease-in-out;
+		}
+	}
+
+	a {
+		&:hover, &:focus {
+			.list-item-address:before,
+			.published-on:before,
+			.applications-closing:before {
+				color: $listings-listitem-subtextfontcolorhover;
+			}
+
+			.list-item-title {
+				// text-decoration: underline;
+			}
+		}
+	}
+}
+
+.list-item-container .list-item-address {
+	+ p.published-on,
+	+ p.applications-closing {
+		margin-top: 5px;
+	}
+}
+
+// Ensure gap for additional text in a list item (such as an announcement)
+.list-item-container p.list-item-additional,
+.list-item-container-2 p.list-item-additional {
+	margin-top: 20px;
+}
+
+.events-list-container {
+	.list-item-block-desc {
+		clear: left;
+	}
+
+	.list-item-block-date {
+		margin-bottom: 20px;
+		height: 101px; 
+		line-height: 2.5;
+
+        .part-date { 
+            display: block; 
+        	font-weight: bold; 
+        } 
+
+        .part-month { 
+            text-transform: uppercase; 
+            display: inline-block; 
+        } 
+    } 
+
+	p.clearfix {
+		+ .list-item-address,
+		+ .published-on {
+			margin-top: 20px;
+		}
+	}
+}
+
+.list-item-address:before {
+	background: none;
+	content: '\ea06'; // Pin
+	font: normal normal normal 19px/1 'FontIcons';
+	color: $listings-listitem-titlefontcolor; // Colour determined by design
+	transition: color 0.3s ease-in-out;
+}
+
+.list-item-container.mycouncil-item-container > a .list-item-title {
+	color: $listings-listitem-titlefontcolor ;
+	font-weight: $listings-listitem-titlefontweight;
+	font-size: $listings-listitem-titlefontsize * 1em;
+	display: block;
+	border-bottom: $listings-listitem-titleborderbottom;
+	padding: $listings-listitem-titlepadding;
+	margin: $listings-listitem-titlemargin;
+}
+
+.elected-official-list-container,
+.department-list-container,
+.waste-services-result,
+.councillor-result {
+	article {
+		@include oc-background-color($listings-listitem-itembackgroundcolor, $listings-listitem-itembackgroundcolor-alpha);
+	}
+}
+
+.elected-official-list-container,
+.department-list-container {
+	header {
+		> a {
+			text-decoration: underline;
+
+			.list-item-title {
+				text-decoration: underline;
+				color: $listings-listitem-titlefontcolor;
+			}
+
+			&:hover, &:focus {
+				text-decoration: none;
+
+				.list-item-title {
+					text-decoration: none;
+					color: $listings-listitem-titlefontcolor;
+				}
+			}
+		}
+	}
+}
+
+.main-container {
+	.seamless-pagination-controls input[type="submit"] {
+		padding: 0;
+	}
+	
+	.button-previous input[type="submit"] {
+		background-position: -30px -456px; // Light
+    	
+    	&:hover, &:focus {
+    		background-position: -30px -456px; // Light
+    	}
+	}
+	
+	.button-next input[type="submit"] {
+		background-position: 20px -456px; // Light
+    	
+    	&:hover, &:focus {
+    		background-position: 20px -456px; // Light
+    	}
+	}
+	
+	input[type="submit"].btn_scPagingNonJS_enabled {
+		position: relative;
+		min-width: 50px;
+		height: 50px;
+		border: none;
+		border-radius: $listings-pagination-borderradius * 1px;
+
+		&:hover, &:focus {
+			text-decoration: underline;
+			@include oc-background-color($listings-pagination-currentpagebackgroundcolor, $listings-pagination-currentpagebackgroundcolor-alpha);
+		}
+	}
+
+	.seamless-pagination-data {
+	  font-size: 1em;
+
+		input[type="submit"].btn_scPagingNonJS_enabled {
+			font-size: 1em;
+			height: 50px;
+			
+			&:hover, &:focus {
+				color: $listings-pagination-currentpagefontcolor;
+				@include oc-background-color($listings-pagination-currentpagebackgroundcolor, $listings-pagination-currentpagebackgroundcolor-alpha);
+			}
+		}
+	}
+	
+	.seamless-pagination-pages { 
+		.page-link {
+			min-width: 40px;
+			font-weight: 400;
+		}
+		
+		.current {
+			min-width: 40px;
+		}
+	}
+}
+
+.list-item-container a {
+	&:hover, &:focus {
+		.list-item-title {
+			text-decoration: none;
+		}
+	}
+}
+// LISTINGS END
+
+// A-Z LISTING
+a.az-letter {
+	position: relative;
+	
+	&:before {
+		content: '';
+		display: block;
+		background-color: $azlisting-azindex-backgroundcolor;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 0;
+		transition: height 0.3s ease-in-out; 
+	}
+	
+	&:hover:before, &:focus:before {
+		height: 5px;
+	}
+}
+// A-Z LISTING END
+
+// MY NEIGHBOURHOOD
+// Adjust spacing of input field 
+.inputBox.text-address-js {
+	margin: 5px 0;
+}
+
+// Fix category filter dropdown line height
+.main-container button.category-filter-toggle {
+	line-height: 28px;
+}
+
+html.geolocation .button-my-location {
+    padding-left: 40px;
+}
+
+.button-my-location {
+	> i {
+		background: none;
+		top: calc(50% - 10px);
+    	left: 15px;
+		
+		&:before {
+			content: '\ea33'; // Crosshair
+			font: normal normal normal 19px/1 'FontIcons';
+			color: $form-button-defaultbuttonfontcolor;
+		}
+	}
+	
+	&:hover, &:focus {
+		> i:before {
+			color: $form-button-defaultbuttonhoverfontcolor;
+		}
+	}
+}
+
+.module-interface-in-my-neighbourhood .button-my-location i {
+	top: calc(50% - 10px);
+}
+
+.map-buttons a.tab-header-title {
+	box-shadow: none;
+	font-weight: normal;
+	font-size: 1em;
+	padding: 18px 25px;
+
+	&.selected {
+		color: $tabs-activetabheader-fontcolor;
+		@include oc-background-color($tabs-activetabheader-backgroundcolor, $tabs-activetabheader-backgroundcolor-alpha);
+		font-weight: bold;
+
+		&:hover, &:focus {
+			color: $tabs-activetabheader-fontcolor;
+			@include oc-background-color($tabs-activetabheader-backgroundcolor, $tabs-activetabheader-backgroundcolor-alpha);
+		}
+	}
+}
+
+.map-results-list {
+	li:last-child {
+		padding-bottom: nth($myneighbourhood-list-itempadding,3);
+	}
+
+	a {
+		&:hover, &:focus {
+			text-decoration: underline;
+
+			.item-name {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.waste-services-result article h3,
+.councillor-result article h3,
+.subpage-content-widget h2.sub-title,
+.waste-services-widget h2.sub-title,
+.councillors-widget h2.sub-title {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+// MY NEIGHBOURHOOD END
+
+// FORM
+// FORM END
+
+// CONTAINERS
+.side-box-content p {
+	color: $containers-defaultsidebox-bodyfontcolor;
+}
+
+.obj-venue, .obj-parks {
+	.side-box.message-box {
+		.side-box-title {
+			padding: 15px 20px;
+		}
+
+		.side-box-content {
+			padding: 0 20px 15px;
+		}
+	}
+}
+
+.accordion-trigger {
+	&:focus {
+		color: $containers-accordions-titlefontcolor;
+	}
+
+	i {
+		background: none;
+		width: 14px;
+	    height: 14px;
+		margin: $containers-accordions-titleexpandiconmargin;
+	
+	    &:before, &:after {
+	        content: "";
+	        position: absolute;
+	        @include oc-background-color($containers-accordions-titlefontcolor, $containers-accordions-titlefontcolor-alpha);
+	        transition: transform 0.3s ease-in-out;
+	    }
+	
+	    // Vertical line
+	    &:before {
+	        top: 0;
+	        left: 50%;
+	        width: 2px;
+	        height: 100%;
+	        margin-left: -1px;
+	    }
+	
+	    // Horizontal line
+	    &:after {
+	        top: 50%;
+	        left: 0;
+	        width: 100%;
+	        height: 2px;
+	        margin-top: -1px;
+	    }
+	}
+   
+	&.accordion-opened {		
+		i {		
+			&:before { 
+	        	transform: rotate(90deg); 
+	        }
+	        
+	        &:after { 
+	        	transform: rotate(180deg); 
+	        }
+		}
+	}
+}
+
+.accordion-list-container .accordion-item-header {
+	border: 2px solid $containers-accordions-titlebackgroundcolor;
+	
+	.item-text {
+		transition: all 300ms ease-out 0s;
+		transition-property: background-color, color;
+	}
+	
+	.accordion-trigger {
+		&:hover, &:focus {
+			i:before, i:after {
+				@include oc-background-color($containers-accordions-titlehoverfontcolor, $containers-accordions-titlehoverfontcolor-alpha);
+			}
+			
+			.item-text {
+				// text-decoration: underline;
+			}
+		}
+	}
+}
+
+// ADD TO CALENDAR
+.calendar-filter {
+	padding: 25px 25px 15px;
+    margin: 0 0 10px;
+}
+
+.add-to-calendar-trigger i {
+	&:before, &:after {
+		background-color: $containers-addtocalender-titlefontcolor;
+	}
+}
+
+// Add to Calendar doesn't have a hover state in Theme settings
+.add-to-calendar-header h2 {
+	transition: background-color 0.3s ease-in-out;
+	border: 2px solid $containers-addtocalender-titlebackgroundcolor;
+	
+	&:hover, &:focus {
+		@include oc-background-color($containers-accordions-titlehoverbackgroundcolor, $containers-accordions-titlehoverbackgroundcolor-alpha);
+		color: $containers-accordions-titlehoverfontcolor;
+		
+		.add-to-calendar-trigger i {
+			&:before, &:after {
+				background-color: $containers-accordions-titlehoverfontcolor;
+			}
+		}
+	}
+}
+
+// Tick when Add to calendar invite sent
+.result-panel:before {
+	background-position: 0px -169px;
+}
+
+// Recent resources
+.recent-resources-list-container .list-item-container a {
+	.list-item-title { 
+		font-size: 1.111em;
+	}
+	
+	&:hover, &:focus {
+		background-color: transparent;
+		
+		.list-item-title {
+			color: $listings-listitem-titlefontcolor;
+			text-decoration: underline;
+		}
+		
+		.published-on:before {
+			color: $listings-listitem-titlefontcolor; // Colour determined by design
+		}
+		
+		p,
+		p.small-text {
+			color: $listings-listitem-descriptionfontcolor;
+		}
+	}
+}
+// CONTAINERS END
+
+// COMMON ELEMENTS
+.featured-links .featured-link {
+	text-align: center;
+	
+	// &:hover, &:focus {
+	// 	text-decoration: none;
+	// }
+}
+
+.emphasis-box-2 {
+	border-bottom: $commonelements-emphasisbox1-borderleft;
+}
+
+.categories-list-container span {
+	font-weight: bold;
+}
+
+.categories-list {
+	margin: 0 0 40px;
+	
+	a {
+		&:hover, &:focus {
+			text-decoration: underline;
+		}
+	}
+}
+
+a.item-navigation {
+	&.prev-item, &.next-item {
+		.item-navigation-label {
+			transition: background-color 0.3s ease-in-out;
+			border: 2px solid transparent;
+			
+			&:before {
+				background: none;
+				height: 18px;
+				width: 18px;
+				content: '\ea1c'; // Right Arrow
+				font: normal normal normal 18px/1 'FontIcons';
+				color: $commonelements-articlenavigation-titlefontcolor;
+			}
+		}
+		
+		&:hover, &:focus {
+			.item-navigation-label {
+				border-color: $commonelements-articlenavigation-titlehoverfontcolor;
+				
+				&:before {
+					color: $commonelements-articlenavigation-titlehoverfontcolor;
+				}
+			}
+		}
+	}
+
+	&.prev-item {
+		margin-bottom: 20px;
+
+		.item-navigation-label:before {
+			content: '\ea1d'; // Left Arrow
+		}
+	}
+
+	.obj-meeting & {
+		margin-top: 50px;
+	}
+}
+
+.tooltipster-glossary {
+	h4 {
+		font-size: 1.3em;
+	}
+
+	p {
+		font-size: 1.2em;
+		line-height: 1.2;
+		color: $commonelements-tooltip-descriptionfontcolor;
+	}
+}
+
+// Reset font size
+span.canceled-tag {
+	font-size: 16px; // Used px to reset base value
+	margin-bottom: 5px;
+}
+// COMMON ELEMENTS END
+
+// FEATURED SECTION
+// FEATURED SECTION END
+
+// OTHER
+.related-information-section {
+	margin-top: 50px;
+
+	h2 {
+		font-size: 1em;
+		border-bottom: none;
+		padding-bottom: 0;
+		margin-bottom: 20px;
+	}
+}
+
+ul.related-information-list {
+	margin: 0;
+	padding: 0;
+}
+
+#main-content {
+	// Sub titles in detail pages (e.g. When in an event page)
+	h2.sub-title {
+		margin-top: 40px;
+	}
+
+	.slideshow-widget h2.sub-title {
+		margin-top: 0;
+	}
+}
+
+.drop-button.zip-all {
+	margin-top: 30px;
+}
+
+a.hyperlink-button,
+.meeting-document-info a,
+.meeting-document-info a.document {
+	margin-bottom: 12px;
+	border-radius: $form-button-borderradius * 1px;
+	font-weight: $form-button-fontweight;
+	font-family: $form-button-fontfamily;
+	padding: $form-button-buttonpadding;
+	padding-right: 35px;
+	border-bottom: none;
+
+	&:before {
+		background: none;
+		content: '\ea1c'; // Right Arrow
+		font: normal normal normal 18px/1 'FontIcons';
+		top: calc(50% - 9px);
+	}
+}
+
+.meeting-document-info a {
+	font-size: $form-button-fontsize * 1em;
+}
+
+.councillor-result article {
+	> a, > a:visited {
+		color: $myneighbourhood-subcontent-titlefontcolor;
+	}
+}
+
+.content-details-list {
+	margin-bottom: 20px;
+
+	.field-label {
+		border-right-color: #FFFFFF;
+	}
+
+	.field-value {
+		border-left: none;
+		margin-left: 0;
+	}
+
+	li {
+		background-color: $table-row-backgroundcolor;
+
+		&:nth-child(2n) {
+			background-color: $table-alternaterow-backgroundcolor;
+		}
+	}
+}
+
+.animal-list-container {
+	.item-adopt span.field-label {
+		background-color: #0E8421;
+	}
+
+	.image-gallery-container .image-gallery-item > a .file-info {
+		bottom: 36px;
+		padding: 3px;
+    	background-color: rgba(0,0,0,0.5);
+	}
+}
+
+.share-page-info {
+	display: inline-block;
+}
+
+.share-page-link-small .share-page-link i {
+	margin-top: 3px;
+}
+
+// Community engagement
+section.comment-forum {
+	header {
+    	font-size: 0.9em;
+
+		.actions {
+    		top: 6px;
+		}
+	}
+
+	footer {
+    	font-size: 0.8em;
+	}
+
+	a {
+		text-decoration: none;
+
+		&:not(.action-forumsubscribe) {
+			&:hover, &:focus {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	span.badge {
+    	font-size: 0.875em;
+	}
+
+	.actions a, .actions a:visited {
+		font-weight: normal;
+	}
+
+	.comment-content, .report-content {
+		padding-left: 0px;
+	}
+
+	.comment-responses .comment-thread {
+		background: transparent;
+		border-bottom: none;
+		border-top: solid 2px #EDEFEF;
+		padding-top: 10px;
+
+		&:first-child {
+			border-top: none;
+			padding-top: 0;
+		}
+
+		> article > .comment-container {
+			padding: 20px;
+			background: #dfe5eb;
+			border: none;
+		}
+
+		&.is-moderator > article > .comment-container {
+			background: #dfe5eb;
+		}
+
+		&.is-archived > article > .comment-container {
+			background: #f4f6f8;
+		}
+
+		.comment-thread {
+			border: none;
+		}
+	}
+
+	.message-box {
+		background-color: $announcement-lowseverity-itembackgroundcolor;
+
+		.side-box-title,
+		.side-box-content {
+    		padding: 20px;
+		}
+
+		.side-box-title {
+    		padding-bottom: 0px;
+			color: $announcement-lowseverity-titlefontcolor;
+		}
+
+		.oc-single-url {
+    		margin-top: 10px;
+		}
+
+		a, a:visited {
+			color: $announcement-lowseverity-linkfontcolor;
+    		text-decoration: underline;
+
+			&:hover, &:focus {
+    			text-decoration: none;
+			}
+		}
+	}
+}
+
+// Resolve rounding issue when calculating max-height
+.image-fade {
+	top: 1px;
+}
+// OTHER END
+
+
+/*Default Styles (Size 3/Mobile)  End*/
+@media (min-width: 480px) {
+	.footer-first-row .grid > .col-s-6:nth-child(odd),  // 3 columns
+	.footer-first-row .logo-footer {
+		clear: left;		
+	}
+	
+	.profile-events-listing .profile-list .list-item-block-date {
+		float: left;
+		display: inline;
+		margin-bottom: 0;
+	}
+
+	.list-container.list-container-grid .small-panel a p.list-item-address {
+		margin-top: 20px;
+	}
+
+	.events-list-container {
+		.list-item-block-desc {
+			clear: none;
+		}
+
+		.list-item-block-date {
+			margin: $listings-event-datemargin;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+  /*Size 2/Tablet Start*/
+// TEMPLATE
+// TEMPLATE END
+
+// TYPOGRAPHY
+// TYPOGRAPHY END
+
+// TABLES
+// TABLES END
+
+// HEADER
+// HEADER END
+
+// UTILITY BAR
+// UTILITY BAR END
+
+// FOOTER
+	.footer-first-row { // 3 columns 
+		.grid { 
+			> .col-s-6:nth-child(odd) {
+				clear: none;
+			}
+		}
+		
+		.logo-footer {
+			clear: none;
+		}
+	}
+	
+	.powered-by {
+		margin-top: 0;
+	}
+// FOOTER END
+
+// BREADCRUMBS
+	#breadcrumbs-container {
+		padding-right: nth($template-general-contentpaddings2,2) + 15px;
+		padding-left: nth($template-general-contentpaddings2,4) + 15px;
+	}
+// BREADCRUMBS END
+
+// HOMEPAGE
+	.row-index-1 .row-container {
+		background: linear-gradient(-180deg, rgba(250,0,0,0) 98px, rgba(247,247,247,1) 98px);
+	}
+// HOMEPAGE END
+
+// HOMEPAGE LISTINGS
+	.tabs-panel .item-0 .list-item-block-date {
+		top: $homepagelistings-events-datetop * 1px;
+		left: $homepagelistings-events-dateleft * 1px;
+	}
+// HOMEPAGE LISTINGS END
+
+// ANNOUNCEMENT
+// ANNOUNCEMENT END
+
+// WELCOME MESSAGE
+// WELCOME MESSAGE END
+
+// ROTATING BANNER
+	.profile-slideshow.slideshow-layout-2 {
+		article .slide-text {
+			padding-top: 60px;
+			padding-bottom: 20px;
+			
+			h2 {
+				padding-bottom: 10px;
+			}
+		}
+		
+		.ocflex-nav-next {
+		    left: 100px;
+		}
+	}
+// ROTATING BANNER END
+
+// TABS
+	a.tab-header-title {	
+		padding: $tabs-tabheader-padding;
+	}
+	
+	.content-type-oc-profile {
+		a.tab-header-title {
+			&:before {
+				display: none;
+			}
+			
+			&.selected {
+				top: -17px;
+			}
+		}
+	}
+// TABS END
+
+// DO IT ONLINE
+	.top-task-homepage .profile-list {
+		.item-icon {
+			display: block;
+		}
+	}
+// DO IT ONLINE END
+
+// FEATURED CONTENT
+// FEATURED CONTENT END
+
+// HOMEPAGE SEARCH
+// HOMEPAGE SEARCH END
+
+// HOMEPAGE ADDRESS PICKER
+// HOMEPAGE ADDRESS PICKER END
+
+// BACK TO TOP
+// BACK TO TOP END
+
+// LANDING PAGE
+	// Landing page template OC 3 Columns with Quick Links - set as 2 columns
+	.quick-links-no-accord-list li:nth-child(odd) {
+		clear: left;
+	}
+	// END
+
+	// Override theme settings (landing pages use listing container theme settings, which aren't always desired)
+	.landing-page-nav .list-item-container,
+	.landing-page-nav .list-item-container.small-panel,
+	.landing-page-list-container .list-item-container,
+	.landing-page-list-container .list-item-container.small-panel,
+	.landing-page-nav.landing-2-col .list-item-container {
+		a {
+			margin: 0 10px 20px;
+		}
+	}
+	// END
+// LANDING PAGE END
+
+// SECTION NAVIGATION
+// SECTION NAVIGATION END
+
+// LISTINGS
+	.list-container-grid .grid > .col-m-6:nth-child(odd) {
+		clear: left;
+	}
+// LISTINGS END
+
+// A-Z LISTING
+// A-Z LISTING END
+
+// MY NEIGHBOURHOOD
+// MY NEIGHBOURHOOD END
+
+// FORM
+// FORM END
+
+// CONTAINERS
+// CONTAINERS END
+
+// COMMON ELEMENTS
+// COMMON ELEMENTS END
+
+// FEATURED SECTION
+// FEATURED SECTION END
+
+// OTHER
+// OTHER END
+  /*Size 2/Tablet End*/
+}
+
+@media (min-width: 480px) and (min-width: 768px) {
+	// Ignore default reduction in font size (0.9em)
+	.profile-listing-container>.profile-news-listing .list-group-grid,
+	.profile-listing-container>.profile-events-listing .list-group-grid {
+		font-size: 1em;
+	}
+	// END
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	.wysiwyg-content .profile-featured-panel .large-thumbnail-image {
+		min-height: 220px;
+	}
+}
+
+// ie 11
+@media all and (-ms-high-contrast:none) {
+	// ...
+}
+
+// safari / IOS
+@media not all and (min-resolution:.001dpcm) { 
+     @supports (-webkit-appearance:none) {
+		// ...
+     }
+}
